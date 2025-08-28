@@ -1,0 +1,40 @@
+.landing-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    background-color: #1E1E1E;
+    overflow: hidden;
+}
+
+.logo {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.to-home-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #125026;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 160px;
+}
+
+.landing-page h2{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.landing-page p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 10px;
+}

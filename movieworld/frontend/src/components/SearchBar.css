@@ -1,0 +1,32 @@
+/* src/components/SearchBar.css */
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px;
+  align-items: center;
+}
+
+.searchbar input{
+  width: 300px;
+}
+
+.searchbar select,
+.searchbar input {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.searchbar button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: rgb(37, 49, 37);
+  color: #fff;
+  cursor: pointer;
+
+}

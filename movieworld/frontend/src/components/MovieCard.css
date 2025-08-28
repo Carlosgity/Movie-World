@@ -1,0 +1,75 @@
+.movie-card {
+  background: #1c1c1c;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.movie-card .movie-top img {
+  width: 100%;
+  height: 320px; /* uniform height */
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.movie-card .movie-top h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0 0;
+}
+
+.movie-card .movie-btm {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.movie-card .movie-btm h3 {
+  font-size: 13px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.movie-card-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.watched-status, .favorite-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background-color: white; /* orange background */
+  color: #125026;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.watched-status.on, .favorite-status.on {
+  background-color: #125026; /* dark green when active */
+  color: white;
+}  
+
+
+.watched-status:hover, .favorite-status:hover {
+  background-color: #a3a3a3; /* lighter shade on hover */
+}
+
+.watched-status h4, .favorite-status h4 {
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: regular;
+  text-align: center;
+}

@@ -1,0 +1,210 @@
+my-collection-page{
+    /* color: white; */
+    min-height: 100vh;
+    display: flex;
+    /* background-color: #282c34; */
+    height: 100vh;
+
+}
+
+body{
+ background-color: #161616;
+
+
+}
+
+.collection-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #161616;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.collection-nav button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #125026;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 160px;
+}
+
+.collection-nav img {
+    width: 100px;
+    height: auto;
+}
+
+.collection-content{
+    margin-top: 150px;
+    padding: 20px;
+    /* background-color: #121212; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+
+}
+
+.col-title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #125026;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+
+/* .movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+
+} */
+
+.favorite-content, .watched-content{
+  background-color: #0f0f0f;
+  padding: 20px;
+    border-radius: 8px;
+  width: 99%;
+}
+
+.favorite-content p, .watched-content p {
+  /* background-color: #ffffff; */
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+    border-radius: 8px;
+  width: 99%;
+}
+
+/* 6 per row on wide screens */
+.movie-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  
+}
+
+/* Cards (prefixed) */
+.col-movie-card {
+  background: #1c1c1c;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0; /* avoids overflow in grid cells */
+}
+
+.col-movie-top .col-poster {
+  width: 100%;
+  height: 320px; /* uniform height */
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.col-movie-top h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0 0;
+}
+
+.col-movie-btm {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.col-movie-btm h3 {
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.col-movie-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.col-watched-status,
+.col-favorite-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #125026;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background .15s ease;
+}
+
+.col-watched-status:hover,
+.col-favorite-status:hover {
+  background-color: #a3a3a3;
+}
+
+.watched-type, .favorite-type {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.watched-type, .favorite-type h2{
+  color: white;
+}
+
+.watched-type button, .favorite-type button{
+  background-color: #282c34;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.tab{
+  background-color: #282c34 !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.tab.active {
+  background-color: #125026 !important;
+  color: #ffffff !important;
+}
+
+.refetch-indicator {
+  font-size: 12px;
+  color: #a3a3a3;
+  margin: 4px 0 8px;
+}
+
